@@ -10,29 +10,29 @@
 <body>
     <h1>test</h1>
     <select onchange="changestage()" id="selected">
-        <option selected>Bバスパーク</option>
-        <option>アジフライスタジアム</option>
-        <option>海女美術大学</option>
-        <option>アロワナモール</option>
-        <option>アンチョビットゲームズ</option>
-        <option>エンガワ河川敷</option>
-        <option>ガンガゼ野外音楽堂</option>
-        <option>コンブトラック</option>
-        <option>ザトウマーケット</option>
-        <option>ショッツル鉱山</option>
-        <option>スメーシーワールド</option>
-        <option>タチウオパーキング</option>
-        <option>チョウザメ造船</option>
-        <option>デボン海洋博物館</option>
-        <option>ハコフグ倉庫</option>
-        <option>バッテラストリート</option>
-        <option>フジツボスポーツクラブ</option>
-        <option>ホッケふ頭</option>
-        <option>ホテルニューオートロ</option>
-        <option>マンタマリア号</option>
-        <option>ムツゴ楼</option>
-        <option>モズク農園</option>
-        <option>モンガラキャンプ場</option>
+        <option selected value="Bバスパーク">Bバスパーク</option>
+        <option value="アジフライスタジアム">アジフライスタジアム</option>
+        <option value="海女美術大学">海女美術大学</option>
+        <option value="アロワナモール">アロワナモール</option>
+        <option value="アンチョビットゲームズ">アンチョビットゲームズ</option>
+        <option value="エンガワ河川敷">エンガワ河川敷</option>
+        <option value="ガンガゼ野外音楽堂">ガンガゼ野外音楽堂</option>
+        <option value="コンブトラック">コンブトラック</option>
+        <option value="ザトウマーケット">ザトウマーケット</option>
+        <option value="ショッツル鉱山">ショッツル鉱山</option>
+        <option value="スメーシーワールド">スメーシーワールド</option>
+        <option value="タチウオパーキング">タチウオパーキング</option>
+        <option value="チョウザメ造船">チョウザメ造船</option>
+        <option value="デボン海洋博物館">デボン海洋博物館</option>
+        <option value="ハコフグ倉庫">ハコフグ倉庫</option>
+        <option value="バッテラストリート">バッテラストリート</option>
+        <option value="フジツボスポーツクラブ">フジツボスポーツクラブ</option>
+        <option value="ホッケふ頭">ホッケふ頭</option>
+        <option value="ホテルニューオートロ">ホテルニューオートロ</option>
+        <option value="マンタマリア号">マンタマリア号</option>
+        <option value="ムツゴ楼">ムツゴ楼</option>
+        <option value="モズク農園">モズク農園</option>
+        <option value="モンガラキャンプ場">モンガラキャンプ場</option>
     </select>
     <img id="imgs" src="/splatoon-tool/images/Bバスパーク.jpg">
     
@@ -41,7 +41,7 @@
         {
             var obj = document.getElementById("selected");
             var idx = obj.serectedIndex;
-            var txt = obj.options[obj.serectedIndex].textContent; 
+            var txt = obj.options[obj.serectedIndex].value; 
             var img = document.getElementById("imgs");
             img.src = "/splatoon-tool/images/"+txt+".jpg";
         }
