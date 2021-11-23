@@ -10,8 +10,8 @@
 <body>
     <h1>test</h1>
     <select onchange="changestage()" id="selected">
-        <option>Bバスパーク</option>
-        <option selected>アジフライスタジアム</option>
+        <option selected>Bバスパーク</option>
+        <option>アジフライスタジアム</option>
         <option>海女美術大学</option>
         <option>アロワナモール</option>
         <option>アンチョビットゲームズ</option>
@@ -41,7 +41,7 @@
         {
             var obj = document.getElementById("selected");
             var idx = obj.serectedIndex;
-            var txt = obj.; 
+            var txt = obj.textContent; 
             var img = document.getElementById("imgs");
             img.src = "/splatoon-tool/images/"+txt+".jpg";
         }
