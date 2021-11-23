@@ -10,29 +10,29 @@
 <body>
     <h1>test</h1>
     <select onchange="changestage()" id="selected">
-        <option selected value="Bバスパーク">Bバスパーク</option>
-        <option value="アジフライスタジアム">アジフライスタジアム</option>
-        <option value="海女美術大学">海女美術大学</option>
-        <option value="アロワナモール">アロワナモール</option>
-        <option value="アンチョビットゲームズ">アンチョビットゲームズ</option>
-        <option value="エンガワ河川敷">エンガワ河川敷</option>
-        <option value="ガンガゼ野外音楽堂">ガンガゼ野外音楽堂</option>
-        <option value="コンブトラック">コンブトラック</option>
-        <option value="ザトウマーケット">ザトウマーケット</option>
-        <option value="ショッツル鉱山">ショッツル鉱山</option>
-        <option value="スメーシーワールド">スメーシーワールド</option>
-        <option value="タチウオパーキング">タチウオパーキング</option>
-        <option value="チョウザメ造船">チョウザメ造船</option>
-        <option value="デボン海洋博物館">デボン海洋博物館</option>
-        <option value="ハコフグ倉庫">ハコフグ倉庫</option>
-        <option value="バッテラストリート">バッテラストリート</option>
-        <option value="フジツボスポーツクラブ">フジツボスポーツクラブ</option>
-        <option value="ホッケふ頭">ホッケふ頭</option>
-        <option value="ホテルニューオートロ">ホテルニューオートロ</option>
-        <option value="マンタマリア号">マンタマリア号</option>
-        <option value="ムツゴ楼">ムツゴ楼</option>
-        <option value="モズク農園">モズク農園</option>
-        <option value="モンガラキャンプ場">モンガラキャンプ場</option>
+        <option id="0" value="Bバスパーク" selected>Bバスパーク</option>
+        <option id="1" value="アジフライスタジアム">アジフライスタジアム</option>
+        <option id="2" value="海女美術大学">海女美術大学</option>
+        <option id="3" value="アロワナモール">アロワナモール</option>
+        <option id="4" value="アンチョビットゲームズ">アンチョビットゲームズ</option>
+        <option id="5" value="エンガワ河川敷">エンガワ河川敷</option>
+        <option id="6" value="ガンガゼ野外音楽堂">ガンガゼ野外音楽堂</option>
+        <option id="7" value="コンブトラック">コンブトラック</option>
+        <option id="8" value="ザトウマーケット">ザトウマーケット</option>
+        <option id="9" value="ショッツル鉱山">ショッツル鉱山</option>
+        <option id="10" value="スメーシーワールド">スメーシーワールド</option>
+        <option id="11" value="タチウオパーキング">タチウオパーキング</option>
+        <option id="12" value="チョウザメ造船">チョウザメ造船</option>
+        <option id="13" value="デボン海洋博物館">デボン海洋博物館</option>
+        <option id="14" value="ハコフグ倉庫">ハコフグ倉庫</option>
+        <option id="15" value="バッテラストリート">バッテラストリート</option>
+        <option id="16" value="フジツボスポーツクラブ">フジツボスポーツクラブ</option>
+        <option id="17" value="ホッケふ頭">ホッケふ頭</option>
+        <option id="18" value="ホテルニューオートロ">ホテルニューオートロ</option>
+        <option id="19" value="マンタマリア号">マンタマリア号</option>
+        <option id="20" value="ムツゴ楼">ムツゴ楼</option>
+        <option id="21" value="モズク農園">モズク農園</option>
+        <option id="22" value="モンガラキャンプ場">モンガラキャンプ場</option>
     </select>
     <img id="imgs" src="/splatoon-tool/images/Bバスパーク.jpg">
     
@@ -41,8 +41,8 @@
         {
             var obj = document.getElementById("selected");
             var idx = obj.serectedIndex;
-            var opts = obj.options;
-            var txt = opts[idx].value; 
+            var opt = document.getElementById(String(idx));
+            var txt = opt.value; 
             var img = document.getElementById("imgs");
             img.src = "/splatoon-tool/images/"+txt+".jpg";
         }
