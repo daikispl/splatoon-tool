@@ -41,7 +41,8 @@
         {
             var obj = document.getElementById("selected");
             var idx = obj.serectedIndex;
-            var txt = obj.options[obj.serectedIndex].value; 
+            var opts = obj.options;
+            var txt = opts[idx].value; 
             var img = document.getElementById("imgs");
             img.src = "/splatoon-tool/images/"+txt+".jpg";
         }
