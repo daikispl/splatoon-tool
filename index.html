@@ -36,6 +36,11 @@
     </select>
     <img id="imgs" src="/splatoon-tool/images/Bバスパーク.jpg">
     
-    <script type="text/javascript" src="/splatoon-tool/scripts/index.js"></script>
+    <script type="text/javascript" >
+        function changestage()
+        {
+            document.getElementById("img").src = "/splatoon-tool/images/"+document.getElementById("selected").options[document.getElementById("selected").selectedIndex].text+".jpg";
+        }
+    </script>
 </body>
 </html>
