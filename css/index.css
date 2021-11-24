@@ -7,7 +7,7 @@
 header
 {
     width: 100%;
-    height: 200px;
+    height: 100px;
     background-image: url("head.jpg");
     background-size: 100%;
 }
@@ -15,6 +15,8 @@ header
 img
 {
     width: 90vw;
+    height: 500px;
+    object-fit: cover;
 }
 .inner
 {
