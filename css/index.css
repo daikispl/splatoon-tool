@@ -32,4 +32,5 @@ img
     width: 90vw;
     height: 80vh;
     object-fit: contain;
+    background-color: black;
 }
