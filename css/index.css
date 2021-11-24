@@ -25,10 +25,11 @@ header
 div
 {
     text-align: center;
+    width: 80vw;
 }
 
 img
 {
-    width: 80vw;
+    
     background-color: black;
 }
