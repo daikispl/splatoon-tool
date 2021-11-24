@@ -74,3 +74,12 @@ function mup(e) {
     //クラス名 .drag も消す
     drag.classList.remove("drag");
 }
+
+window.onload = function()
+{
+    
+}
+
+window.addEventListener('resize', function(){
+
+}, false);
