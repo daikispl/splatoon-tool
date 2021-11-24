@@ -4,12 +4,19 @@
     padding: 0px;
 }
 
+@font-face {
+    font-family: 'ikamodoki_en';
+    src: url("Paintball_Beta_4a.otf");
+}
+
 header
 {
     width: 100%;
     height: 100px;
     background-image: url("head.jpg");
     background-size: 100%;
+    text-align: center;
+    font-family: 'ikamodoki_en';
 }
 
 img
