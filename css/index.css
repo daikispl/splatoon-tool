@@ -29,9 +29,6 @@ div
 
 img
 {
-    width: 90vw;
-    height: 80vh;
-    object-fit: contain;
-    object-position: top;
+    width: 80vw;
     background-color: black;
 }
