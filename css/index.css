@@ -32,3 +32,16 @@ img
     width: 90vw;
     background-color: black;
 }
+
+.drag-and-drop {
+    cursor: move;
+    position: absolute;
+    z-index: 1000;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+}
+
+.drag {
+    z-index: 1001;
+}
