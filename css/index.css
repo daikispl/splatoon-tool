@@ -22,10 +22,8 @@ header
     color: white;
 }
 
-.viewimg
+div.viewimg
 {
-    width: 90vw;
-    background-color: black;
     text-align: center;
 }
 
