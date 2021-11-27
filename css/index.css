@@ -24,21 +24,15 @@ header
 
 .view
 {
-    width: 90vw;
-    height: 90vh;
+    width: 95vw;
+    height: 95vh;
     background-color: blue;
-    float: left;
-}
-
-div.viewimg
-{
-    text-align: center;
 }
 
 img
 {
+    position: absolute;
     width: 90vw;
-    background-color: black;
 }
 
 .drag-and-drop {
